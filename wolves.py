@@ -2,6 +2,7 @@ class Wolves:
     """Class for wolves pictures"""
 
     def __init__(self):
+        self._angry_wolf = self._angry_wolf
         self._pack = self._pack
         self._paws = self._paws
         self._wolves_pack = self._wolves_pack
@@ -136,3 +137,4 @@ class Wolves:
                                                ┐    ╬▄─,      ▄█┴  ▒╬█:`           `─"┘─                    
                                                 ─    └▀▀▀██▓▀▀▒n  ]▒▒░H╖`         ⌐.░░╨╥``        :,─,     .
         ''')
+        return self._angry_wolf

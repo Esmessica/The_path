@@ -29,6 +29,8 @@ class AsciiText:
         return self._game_over
 
     @property
-    def tart_info(self):
+    def start_info(self):
         return self._start_info
 
+
+print(AsciiText().start_info)

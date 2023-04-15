@@ -3,7 +3,7 @@ import time
 
 class ConsolePrinter:
 
-    """Text slow printing"""
+    """Text slow printing class"""
 
     def __init__(self, text):
         self._text = text
@@ -16,6 +16,7 @@ class ConsolePrinter:
         for character in self._text:
             print(character, end="", flush=True)
             time.sleep(0.03)
+
 
 
 

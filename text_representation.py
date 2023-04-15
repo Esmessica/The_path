@@ -12,13 +12,15 @@ class ConsolePrinter:
         return f"Printing : {self._text}"
 
     def slow_print(self):
-        print("\t \t")
+        print("\t \t", end="")
         for character in self._text:
-            print(character, end="")
-            time.sleep(0.05)
+            print(character, end="", flush=True)
+            time.sleep(0.03)
+
 
 c = ConsolePrinter(input("input"))
 c.slow_print()
+
 
 
 

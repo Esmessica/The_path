@@ -24,10 +24,8 @@ class AsciiText:
                                                                     |___/            |___/                               
                              """
 
-    @property
     def game_over(self):
         return self._game_over
 
-    @property
     def start_info(self):
         return self._start_info

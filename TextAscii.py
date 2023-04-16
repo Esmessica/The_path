@@ -31,6 +31,3 @@ class AsciiText:
     @property
     def start_info(self):
         return self._start_info
-
-
-print(AsciiText().start_info)

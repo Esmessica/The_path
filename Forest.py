@@ -3,22 +3,22 @@ class Forest:
     """Class for Forest related pics printing"""
 
     def __init__(self):
-        self._log = self._log
-        self._fontain1 = self._fontain1
-        self._forest8 = self._forest8
-        self._forest7 = self._forest7
-        self._forest6 = self._forest6
-        self._forest5 = self._forest5
-        self._forest4 = self._forest4
-        self._forest3 = self._forest3
-        self._split2 = self._split2
-        self._split1 = self._split1
-        self._stairs1 = self.stairs_forest1()
-        self._muddy_path = self._muddy_path
-        self._lonely_tree = self._lonely_tree
-        self._forest1 = self._forest1
-        self._forest2 = self._forest2
-        self._start_car = self._start_car
+        self._forest8 = None
+        self._forest7 = None
+        self._fontain1 = None
+        self._forest6 = None
+        self._forest5 = None
+        self._forest4 = None
+        self._forest3 = None
+        self._split2 = None
+        self._split1 = None
+        self._stairs1 = None
+        self._muddy_path = None
+        self._lonely_tree = None
+        self._start_car = None
+        self._forest2 = None
+        self._forest1 = None
+        self._login = None
 
     def __str__(self):
         self._information = "Forest pictures"
@@ -563,8 +563,8 @@ class Forest:
         ''')
         return self._fontain1
 
-    def log_screen(self):
-        self._log = ('''
+    def login_screen(self):
+        self._login = '''
         ░ ░╙░= ╚▓▒▒█▌▀░ ∩╨▀▒`╘<┐   `  " -  ¿    ,   .`~`∩ ▓██▌▒ █▒│<`       ╜▓▌-  └ .   "             <░ ;  
           ` `  R▒ä╩▀▀▒   Ü─^^'` `  `   w\¥╬"   -    "░.   ▐╬▌▌▒ ╙░          <Å╜         ".         ─╗Ö╨¥, └╒
                ~░Y <─┼  +▒╣╙▀═'─   "  `Ñ╫▀▀Ñ▒░ ╙▒      ∩;   ╢▒▀ ╒ :         ~ÿ"   ─ L─  `┘  µ      ░▀╬██▐▀░░
@@ -589,5 +589,5 @@ class Forest:
         *     └              ─    ,┐└"─     "──?s∩^┘│*▒╢▒▒╣╣▓▓▓▌╫è░`.Æ╢▒▒@▒Ü     ,╠▀╢▒┌  ╙▌▌▄╓─*         ░D╖
                                  -":  :     `──  ─└ê▒░╜<-,»⌐ - . ≈⌐½%░[ƒ¿¿       ─@Ä░ßè `   └G▀╢▌▀╨▀╣░      
                `─ `       ─ `          /─└,∩τ╙░░┼╜√?─`   ──≈¿⌐░p▒░╓%▒Ñ╙⌐┘        ▒▀▒╬▒╢▒D░:`   ç░▒▒▒▒▒╢▒è∩  
-        ''')
-        return self._log
+        '''
+        return self._login

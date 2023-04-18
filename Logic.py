@@ -1,6 +1,7 @@
 from StoryTexts import *
 from PicToText import *
 
+
 class GameLogic:
 
     """Logic and timelines of a game"""

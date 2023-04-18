@@ -1,10 +1,13 @@
 from StoryTexts import *
 from PicToText import *
-
-
+from reseter import Clear
+clear = Clear()
+_clr = clear.cls()
 class GameLogic:
 
     """Logic and timelines of a game"""
+
+
 
     def __init__(self):
         pass
@@ -20,3 +23,4 @@ class GameLogic:
 
 g = GameLogic()
 g.part1()
+_clr

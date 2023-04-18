@@ -10,19 +10,23 @@ class GameLogic:
 
     """Logic and timelines of a game"""
 
-
     def __init__(self):
-        pass
+        self._file = FileImporter()
+        self._pic = PictureInGame()
 
     def __str__(self):
         return "Logic of a game and logic paths"
 
     def part1(self):
-        _file = FileImporter()
-        _pregame = _file.open_story_lines()
-        return _pregame
+        _pregame = self._file.open_story_lines()
+        _pregame_pic = self._pic.start_game()
+        _pregame_text = self._pic.start_text()
+        _pregame
+        print(_pregame_pic)
+        print(_pregame_text)
 
 
 g = GameLogic()
 g.part1()
 _clr
+input()

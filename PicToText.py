@@ -3,7 +3,7 @@ from Cabin import *
 from TextAscii import *
 
 
-class Game:
+class PictureInGame:
 
     """This class puts pictures together with sentences"""
 

@@ -7,7 +7,7 @@ clear = Clear()
 _clr = clear.cls()
 
 
-class GameLogic:
+class StartLogic:
 
     """Logic and timelines of a game"""
 
@@ -30,7 +30,7 @@ class GameLogic:
 tutorial = FileImporter()
 tutorial.tutorial_texts()
 _clr
-g = GameLogic()
+g = StartLogic()
 g.part1()
 _clr
 input()

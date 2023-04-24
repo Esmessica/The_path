@@ -34,6 +34,3 @@ class FileImporter:
 
 # f = FileImporter()
 # f.tutorial_texts()
-
-
-

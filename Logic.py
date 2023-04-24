@@ -18,7 +18,7 @@ class StartLogic:
     def __str__(self):
         return "Logic of a game and logic paths"
 
-    def part1(self):
+    def part1_game(self):
         tutorial = FileImporter()
         tutorial.tutorial_texts()
         _clr
@@ -30,3 +30,6 @@ class StartLogic:
         print(_pregame_text)
 
 
+s = StartLogic()
+s.part1_game()
+input()

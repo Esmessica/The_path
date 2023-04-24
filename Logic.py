@@ -1,6 +1,7 @@
 from StoryTexts import *
 from PicToText import *
 from reseter import Clear
+from StoryTexts import FileImporter
 
 clear = Clear()
 _clr = clear.cls()
@@ -25,10 +26,10 @@ class GameLogic:
         print(_pregame_pic)
         print(_pregame_text)
 
-    def game_tutorial_info(self):
 
-
-
+tutorial = FileImporter()
+tutorial.tutorial_texts()
+_clr
 g = GameLogic()
 g.part1()
 _clr

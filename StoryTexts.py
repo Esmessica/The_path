@@ -32,10 +32,8 @@ class FileImporter:
         return True
 
 
-
-
-f = FileImporter()
-f.tutorial_texts()
+# f = FileImporter()
+# f.tutorial_texts()
 
 
 

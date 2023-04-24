@@ -25,6 +25,9 @@ class GameLogic:
         print(_pregame_pic)
         print(_pregame_text)
 
+    def game_tutorial_info(self):
+
+
 
 g = GameLogic()
 g.part1()

@@ -8,7 +8,6 @@ _clr = clear.cls()
 
 
 class StartLogic:
-
     """Logic and timelines of a game"""
 
     def __init__(self):
@@ -18,7 +17,7 @@ class StartLogic:
     def __str__(self):
         return "Logic of a game and logic paths"
 
-    def part1_game(self):
+    def part_0_game(self):
         tutorial = FileImporter()
         tutorial.tutorial_texts()
         _clr
@@ -29,7 +28,13 @@ class StartLogic:
         print(_pregame_pic)
         print(_pregame_text)
 
+    def part_1_game(self):
+        """post-screen timeline"""
+        # TODO write text for each picture
+        # TODO match text to each picture for story
+        # TODO make function for moving into next location via < >
+
 
 s = StartLogic()
-s.part1_game()
+s.part_0_game()
 input()

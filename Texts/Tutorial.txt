@@ -1,3 +1,3 @@
 Your journey begins. The game is controled by typing arrows.
-Type "<-" to go backwards, "->" to go forward.
+Type "<" to go backwards, ">" to go forward.
 -------- press enter to continue --------

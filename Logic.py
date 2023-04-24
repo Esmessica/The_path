@@ -19,6 +19,9 @@ class StartLogic:
         return "Logic of a game and logic paths"
 
     def part1(self):
+        tutorial = FileImporter()
+        tutorial.tutorial_texts()
+        _clr
         _pregame = self._file.open_story_lines()
         _pregame_pic = self._pic.start_game()
         _pregame_text = self._pic.start_text()
@@ -27,10 +30,3 @@ class StartLogic:
         print(_pregame_text)
 
 
-tutorial = FileImporter()
-tutorial.tutorial_texts()
-_clr
-g = StartLogic()
-g.part1()
-_clr
-input()

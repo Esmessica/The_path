@@ -2,6 +2,7 @@ from StoryTexts import *
 from PicToText import *
 from reseter import Clear
 from StoryTexts import FileImporter
+from SlowTextPrint import *
 
 clear = Clear()
 _clr = clear.cls()
@@ -11,6 +12,8 @@ class StartLogic:
     """Logic and timelines of a game"""
 
     def __init__(self):
+        self._number_of_line = None
+        self._forest = None
         self._file = FileImporter()
         self._pic = PictureInGame()
 
@@ -28,13 +31,31 @@ class StartLogic:
         print(_pregame_pic)
         print(_pregame_text)
 
+    def story_lines(self, number_of_line):
+        """enter the number of line from text file"""
+        self._number_of_line = number_of_line
+        with open("Texts/Story.txt", encoding="utf-8") as file:
+            self._sentence = file.readlines()
+            print(self._sentence[number_of_line])
+
     def part_1_game(self):
         """post-screen timeline"""
-        # TODO write text for each picture
-        # TODO match text to each picture for story
-        # TODO make function for moving into next location via < >
+        self._forest = Forest().start_car()
+        print(self._forest)
+        self._slowprint = ConsolePrinter(self._sentence[0])
+        self._slowprint.slow_print()
 
 
+# TO write text for each picture
+# TO match text to each picture for story
+# TO make function for moving into next location via < >
+
+
+print("here")
 s = StartLogic()
-s.part_0_game()
+s.story_lines(0)
+s.part_1_game()
 input()
+# s = StartLogic()
+# s.part_0_game()
+# input()

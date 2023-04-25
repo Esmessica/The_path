@@ -25,6 +25,8 @@ class PictureInGame:
         return self._start_text
 
 
+# TODO make ending screen + game over
+
 # testing
 # g = Game()
 # print(g.start_game())

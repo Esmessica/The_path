@@ -23,6 +23,7 @@ class StartLogic:
     def part_0_game(self):
         tutorial = FileImporter()
         tutorial.tutorial_texts()
+        input()
         _clr
         _pregame = self._file.open_story_lines()
         _pregame_pic = self._pic.start_game()
@@ -45,17 +46,19 @@ class StartLogic:
         self._slowprint = ConsolePrinter(self._sentence[0])
         self._slowprint.slow_print()
 
+    def part_2_game(self):
+        """second part of journey"""
+
+
 
 # TO write text for each picture
 # TO match text to each picture for story
 # TO make function for moving into next location via < >
 
 
-print("here")
+s = StartLogic()
+s.part_0_game()
 s = StartLogic()
 s.story_lines(0)
 s.part_1_game()
-input()
-# s = StartLogic()
-# s.part_0_game()
-# input()
+

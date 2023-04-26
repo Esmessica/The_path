@@ -15,11 +15,13 @@ class PictureInGame:
         return "Pictures with sentences from txt file"
 
     def start_game(self):
+        """Start game picture"""
         _forest = Forest()
         self._forest = _forest.login_screen()
         return self._forest
 
     def start_text(self):
+        """Ascii art start game"""
         _text1 = AsciiText()
         self._start_text = _text1.start_info()
         return self._start_text

@@ -4,9 +4,6 @@ from reseter import Clear
 from StoryTexts import FileImporter
 from SlowTextPrint import *
 
-clear = Clear()
-_clr = clear.cls()
-
 
 class StartLogic:
     """Logic and timelines of a game"""
@@ -25,13 +22,15 @@ class StartLogic:
     def part_start_game(self):
         tutorial = FileImporter()
         tutorial.tutorial_texts()
-        _clr
+        Clear().cls()
         _pregame = self._file.open_story_lines()
         _pregame_pic = self._pic.start_game()
         _pregame_text = self._pic.start_text()
-        _pregame
+        Clear().cls()
         print(_pregame_pic)
         print(_pregame_text)
+        input()
+        Clear().cls()
 
     def play_afterstart_game(self, forest, sentence_index):
         self._forest = forest
@@ -46,5 +45,9 @@ class StartLogic:
 # TO match text to each picture for story
 # TO make function for moving into next location via < >
 
+
+# testing
 s = StartLogic()
 s.part_start_game()
+s.play_afterstart_game(Forest().start_car(), 0)
+input()

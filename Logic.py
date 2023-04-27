@@ -32,7 +32,26 @@ class StartLogic:
         input()
         Clear().cls()
 
+    def press_direction(self):
+        """direction decider left = True, right = False"""
+        _questioning_cycle = 1
+        while _questioning_cycle:
+            self._question = input("Which way should I go?\t < \t >\n\t")
+
+            if self._question == "<":
+                _questioning_cycle = 0
+                return True
+            elif self._question == ">":
+                _questioning_cycle = 0
+                return False
+            else:
+                _e = "I need left or right arrow to continue!"
+                try:
+                    raise ValueError(_e)
+                except ValueError as exp:
+                    print("Error", exp)
     def play_afterstart_game(self, forest, sentence_index):
+        """Method for choosing line of text code and picture from py file"""
         self._forest = forest
         print(self._forest)
         with open("Texts/Story.txt", encoding="utf-8") as file:
@@ -47,7 +66,10 @@ class StartLogic:
 
 
 # testing
+# s = StartLogic()
+# s.part_start_game()
+# s.play_afterstart_game(Forest().start_car(), 0)
+# input()
+# s.play_afterstart_game(Forest().forest6(), 1)
 s = StartLogic()
-s.part_start_game()
-s.play_afterstart_game(Forest().start_car(), 0)
-input()
+s.press_direction()

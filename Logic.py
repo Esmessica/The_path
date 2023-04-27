@@ -1,4 +1,3 @@
-from StoryTexts import *
 from PicToText import *
 from reseter import Clear
 from StoryTexts import FileImporter
@@ -36,7 +35,7 @@ class StartLogic:
         """direction decider left = True, right = False"""
         _questioning_cycle = 1
         while _questioning_cycle:
-            self._question = input("Which way should I go?\t < \t >\n\t")
+            self._question = input("\t\tWhich way should I go?\t < \t >\n\t\t")
 
             if self._question == "<":
                 _questioning_cycle = 0
@@ -50,6 +49,7 @@ class StartLogic:
                     raise ValueError(_e)
                 except ValueError as exp:
                     print("Error", exp)
+
     def play_afterstart_game(self, forest, sentence_index):
         """Method for choosing line of text code and picture from py file"""
         self._forest = forest
@@ -66,10 +66,10 @@ class StartLogic:
 
 
 # testing
-# s = StartLogic()
+s = StartLogic()
 # s.part_start_game()
 # s.play_afterstart_game(Forest().start_car(), 0)
 # input()
 # s.play_afterstart_game(Forest().forest6(), 1)
-s = StartLogic()
+s.play_afterstart_game(Forest().forest6(), 2)
 s.press_direction()

@@ -1,4 +1,5 @@
 from SlowTextPrint import ConsolePrinter
+from reseter import *
 
 """This file takes texts from .txt file for story telling. It takes one line of txt file at time."""
 
@@ -9,6 +10,7 @@ class FileImporter:
 
     def __str__(self):
         pass
+
     def open_story_lines(self):
         with open("Texts/StoryLines.txt", encoding="utf-8") as file:  # test
             count = 0
@@ -20,7 +22,6 @@ class FileImporter:
                 printer = ConsolePrinter(variable)
                 _do = printer.slow_print()
                 input()
-            return True
 
     def tutorial_texts(self):
         with open("Texts/Tutorial.txt", encoding="utf-8") as file:
@@ -28,8 +29,9 @@ class FileImporter:
             for i in sentence:
                 printer = ConsolePrinter(i)
                 _do = printer.slow_print()
+            print("\n")
             input()
-        return True
+            Clear().cls()
 
 
 # f = FileImporter()

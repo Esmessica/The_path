@@ -62,7 +62,7 @@ class GameComponentLogic:
                 except ValueError as exp:
                     print("Error", exp)
 
-    def play_afterstart_game(self, forest, sentence_index):
+    def play_forest_sentence(self, forest, sentence_index):
         """Method for choosing line of text code and picture from py file"""
         self._forest = forest
         print(self._forest)
@@ -80,8 +80,8 @@ class GameComponentLogic:
 # # testing
 # s = StartLogic()
 # # s.part_start_game()
-# # s.play_afterstart_game(Forest().start_car(), 0)
+# # s.play_forest_sentence(Forest().start_car(), 0)
 # # input()
-# # s.play_afterstart_game(Forest().forest6(), 1)
-# s.play_afterstart_game(Forest().forest6(), 2)
+# # s.play_forest_sentence(Forest().forest6(), 1)
+# s.play_forest_sentence(Forest().forest6(), 2)
 # s.press_direction()

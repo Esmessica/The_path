@@ -6,7 +6,7 @@ from wolves import *
 
 
 class GameComponentLogic:
-    """Logic and timelines of a game"""
+    """Logic of a game components, start, end + decision method for controling game flow"""
 
     def __init__(self):
         self._question = None
@@ -21,6 +21,7 @@ class GameComponentLogic:
         return "Logic of a game and logic paths"
 
     def part_start_game(self):
+        """Method for starting game screen"""
         tutorial = FileImporter()
         tutorial.tutorial_texts()
         Clear().cls()
@@ -33,7 +34,8 @@ class GameComponentLogic:
         input()
         Clear().cls()
 
-    def part_game_over(self):
+    def game_over(self):
+        """Method for game over screen  -  without text"""
         Clear().cls()
         _wolf = Wolves()
         print(_wolf.angry_wolf())
@@ -76,8 +78,6 @@ class GameComponentLogic:
 
 
 # # testing
-d = GameComponentLogic()
-print(d.part_game_over())
 # s = StartLogic()
 # # s.part_start_game()
 # # s.play_afterstart_game(Forest().start_car(), 0)

@@ -3,6 +3,8 @@ from Forest import *
 from reseter import *
 
 
+"""This file manages the game flow"""
+
 game = GameComponentLogic()
 forest = Forest()
 

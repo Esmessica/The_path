@@ -2,10 +2,10 @@ class Wolves:
     """Class for wolves pictures"""
 
     def __init__(self):
-        self._angry_wolf = self._angry_wolf
-        self._pack = self._pack
-        self._paws = self._paws
-        self._wolves_pack = self._wolves_pack
+        self._angry_wolf = None
+        self._pack = None
+        self._paws = None
+        self._wolves_pack = None
 
     def __str__(self):
         self.__information = "Class for printing wolves related images"

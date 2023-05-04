@@ -1,5 +1,4 @@
 from Forest import *
-from Cabin import *
 
 
 class PictureInGame:
@@ -9,7 +8,8 @@ class PictureInGame:
     def __init__(self):
         self._start_text = None
         self._forest = None
-        self._game_over = """ ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████   ██▒   █▓▓█████  ██▀███  
+        self._game_over = """ 
+                              ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████   ██▒   █▓▓█████  ██▀███  
                              ██▒ ▀█ ▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀    ▒██▒  ██▒▓██░   █▒▓█   ▀ ▓██ ▒ ██▒
                             ▒██░▄▄▄ ░▒██  ▀█▄  ▓██    ▓██░▒███      ▒██░  ██▒ ▓██  █▒░▒███   ▓██ ░▄█ ▒
                             ░▓█  ██▓ ░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄    ▒██   ██░  ▒██ █░░▒▓█  ▄ ▒██▀▀█▄  
@@ -46,17 +46,5 @@ class PictureInGame:
         return self._start_info
 
     def game_over(self):
-
         return self._game_over
-
-
-
-# TODO make ending screen + game over
-
-# testing
-# g = Game()
-# print(g.start_game())
-# print(g.start_text())
-# input()
-
 

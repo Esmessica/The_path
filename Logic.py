@@ -2,9 +2,10 @@ from PicToText import *
 from reseter import Clear
 from StoryTexts import FileImporter
 from SlowTextPrint import *
+from wolves import *
 
 
-class StartLogic:
+class GameComponentLogic:
     """Logic and timelines of a game"""
 
     def __init__(self):
@@ -31,6 +32,14 @@ class StartLogic:
         print(_pregame_text)
         input()
         Clear().cls()
+
+    def part_game_over(self):
+        Clear().cls()
+        _wolf = Wolves()
+        print(_wolf.angry_wolf())
+        _game_over = self._pic.game_over()
+        print(_game_over)
+        input()
 
     def press_direction(self):
         """direction decider left = True, right = False"""
@@ -67,6 +76,8 @@ class StartLogic:
 
 
 # # testing
+d = GameComponentLogic()
+print(d.part_game_over())
 # s = StartLogic()
 # # s.part_start_game()
 # # s.play_afterstart_game(Forest().start_car(), 0)

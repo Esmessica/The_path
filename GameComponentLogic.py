@@ -43,18 +43,18 @@ class GameComponentLogic:
         print(_game_over)
         input()
 
-    def press_direction(self):
+    def direction(self):
         """direction decider left = True, right = False"""
         _questioning_cycle = 1
         while _questioning_cycle:
-            self._question = input("\t\tWhich way should I go?\t < \t >\n\t\t")
+            self._question = input("\n\n\t\tWhich way should I go?\t < \t >\n\t\t")
 
             if self._question == "<":
                 _questioning_cycle = 0
-                return True
+                return 1
             elif self._question == ">":
                 _questioning_cycle = 0
-                return False
+                return 0
             else:
                 _e = "I need left or right arrow to continue!"
                 try:
@@ -84,4 +84,4 @@ class GameComponentLogic:
 # # input()
 # # s.play_forest_sentence(Forest().forest6(), 1)
 # s.play_forest_sentence(Forest().forest6(), 2)
-# s.press_direction()
+# s.direction()

@@ -75,13 +75,3 @@ class GameComponentLogic:
 # TO write text for each picture CHECK
 # TO match text to each picture for story
 # TO make function for moving into next location via < >
-
-
-# # testing
-# s = StartLogic()
-# # s.part_start_game()
-# # s.play_forest_sentence(Forest().start_car(), 0)
-# # input()
-# # s.play_forest_sentence(Forest().forest6(), 1)
-# s.play_forest_sentence(Forest().forest6(), 2)
-# s.direction()

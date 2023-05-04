@@ -8,6 +8,7 @@ class StartLogic:
     """Logic and timelines of a game"""
 
     def __init__(self):
+        self._question = None
         self._slowprint = None
         self._number_of_line = None
         self._forest = None
@@ -60,16 +61,16 @@ class StartLogic:
         self._slowprint.slow_print()
 
 
-# TO write text for each picture
+# TO write text for each picture CHECK
 # TO match text to each picture for story
 # TO make function for moving into next location via < >
 
 
-# testing
-s = StartLogic()
-# s.part_start_game()
-# s.play_afterstart_game(Forest().start_car(), 0)
-# input()
-# s.play_afterstart_game(Forest().forest6(), 1)
-s.play_afterstart_game(Forest().forest6(), 2)
-s.press_direction()
+# # testing
+# s = StartLogic()
+# # s.part_start_game()
+# # s.play_afterstart_game(Forest().start_car(), 0)
+# # input()
+# # s.play_afterstart_game(Forest().forest6(), 1)
+# s.play_afterstart_game(Forest().forest6(), 2)
+# s.press_direction()

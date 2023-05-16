@@ -3,7 +3,7 @@ from reseter import Clear
 from StoryTexts import FileImporter
 from SlowTextPrint import *
 from wolves import *
-
+import random
 
 class GameComponentLogic:
     """Logic of a game components, start, end + decision method for controling game flow"""
@@ -71,7 +71,13 @@ class GameComponentLogic:
         self._slowprint = ConsolePrinter(self._sentence[sentence_index])
         self._slowprint.slow_print()
 
+    def wolf_chance(self):
+        self._chance = random.randint(1, 5)
+        return self._chance
 
+
+# g = GameComponentLogic()
+# print(g.wolf_chance())
 # TO write text for each picture CHECK
 # TO match text to each picture for story
 # TO make function for moving into next location via < >

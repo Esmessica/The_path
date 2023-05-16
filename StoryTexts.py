@@ -4,7 +4,7 @@ from reseter import *
 """This file takes texts from .txt file for story telling. It takes one line of txt file at time."""
 
 
-class FileImporter:
+class StoryTexts:
     def __init__(self):
         self._leng = None
 
@@ -34,5 +34,5 @@ class FileImporter:
             Clear().cls()
 
 
-# f = FileImporter()
+# f = StoryTexts()
 # f.tutorial_texts()

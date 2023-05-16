@@ -1,6 +1,6 @@
 from PicToText import *
 from reseter import Clear
-from StoryTexts import FileImporter
+from StoryTexts import StoryTexts
 from SlowTextPrint import *
 from wolves import *
 import random
@@ -13,7 +13,7 @@ class GameComponentLogic:
         self._slowprint = None
         self._number_of_line = None
         self._forest = None
-        self._file = FileImporter()
+        self._file = StoryTexts()
         self._pic = PictureInGame()
         self._sentence = None
 
@@ -22,7 +22,7 @@ class GameComponentLogic:
 
     def part_start_game(self):
         """Method for starting game screen"""
-        tutorial = FileImporter()
+        tutorial = StoryTexts()
         tutorial.tutorial_texts()
         Clear().cls()
         _pregame = self._file.open_story_lines()

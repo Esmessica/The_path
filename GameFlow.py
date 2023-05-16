@@ -1,6 +1,6 @@
 from GameComponentLogic import *
 from Forest import *
-from reseter import *
+from StoryTexts import  *
 
 
 class Game():
@@ -16,7 +16,9 @@ class Game():
     def ingame(self):
         _game = GameComponentLogic()
         forest = Forest()
-
+        _before_game = StoryTexts()
+        _before_game.tutorial_texts()
+        _before_game.open_story_lines()
         # print(game.part_start_game())
         _game.play_forest_sentence(forest.start_car(), 0)
         input()

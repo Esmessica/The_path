@@ -18,6 +18,7 @@ class Game:
         _game = GameComponentLogic()
         forest = Forest()
         keyboard.press('f11')
+
         _before_game = StoryTexts()
         _before_game.tutorial_texts()
         _before_game.open_story_lines()
@@ -33,6 +34,25 @@ class Game:
             _game.play_forest_sentence(forest.forest5(), 3)
             input()
             Clear().cls()
+            _game.play_forest_sentence(forest.stairs_forest1(), 5)
+            input()
+            Clear().cls()
+            _game.play_forest_sentence(forest.lonely_tree(), 6)
+            if _game.direction() == 1:
+                _game.play_forest_sentence(forest.split_path1(), 7)
+                input()
+                Clear().cls()
+                _game.play_forest_sentence(forest.forest_rocks(), 8)
+                input()
+                Clear().cls()
+                _game.play_forest_sentence(forest.forest3(), 9)
+                input()
+                Clear().cls()
+
+
+            else:
+                pass
+
 
         else:
             _game.play_forest_sentence(forest.forest7(), 4)

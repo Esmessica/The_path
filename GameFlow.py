@@ -1,9 +1,10 @@
 from GameComponentLogic import *
 from Forest import *
-from StoryTexts import  *
+from StoryTexts import *
+import keyboard
 
 
-class Game():
+class Game:
 
     """This file manages the game flow"""
 
@@ -16,6 +17,7 @@ class Game():
     def ingame(self):
         _game = GameComponentLogic()
         forest = Forest()
+        keyboard.press('f11')
         _before_game = StoryTexts()
         _before_game.tutorial_texts()
         _before_game.open_story_lines()

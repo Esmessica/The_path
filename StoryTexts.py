@@ -9,7 +9,7 @@ class StoryTexts:
         self._leng = None
 
     def __str__(self):
-        pass
+        return "Texts before game starts"
 
     def open_story_lines(self):
         with open("Texts/StoryLines.txt", encoding="utf-8") as file:  # test

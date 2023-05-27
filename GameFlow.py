@@ -2,6 +2,7 @@ from GameComponentLogic import *
 from Forest import *
 from StoryTexts import *
 import keyboard
+from Cabin import Cabins
 
 
 class Game:
@@ -17,6 +18,7 @@ class Game:
     def ingame(self):
         _game = GameComponentLogic()
         forest = Forest()
+        cabin = Cabins()
         keyboard.press('f11')
 
         _before_game = StoryTexts()
@@ -49,10 +51,23 @@ class Game:
                 input()
                 Clear().cls()
                 _game.play_forest_sentence(forest.lonely_tree(), 10)
-
             else:
-                pass
-
+                _game.play_forest_sentence(forest.fontain(), 11)
+                input()
+                Clear().cls()
+                _game.play_forest_sentence(forest.forest_rocks(), 12)
+                input()
+                Clear().cls()
+                _game.play_forest_sentence(cabin.cabin2(), 13)
+                input()
+                Clear().cls()
+                _game.play_forest_sentence(cabin.cabin_door(), 14)
+                input()
+                Clear().cls()
+                _game.play_forest_sentence(cabin.keys_on_table(), 15)
+                input()
+                Clear().cls()
+                _game.play_forest_sentence(forest.login_screen(), 16)
 
         else:
             _game.play_forest_sentence(forest.forest7(), 4)

@@ -24,8 +24,7 @@ I think it was left... Left! Yeah, this path seems familiar.... It reminds me, t
 +_Sarah... My dear. I can't stop thinking about you... About us. About our journey in life... We've been throught so much. When your dad passed away, alot has changed. You took care of your mom... while pausing your career. I know you two were close... I wish I could have done more for you. I wish I could have taken away your sadness. I wish I could do more for you right now... ... ... I love you. I really hope your medication will help you feel again. My love, my hero, my life, I am on my way home.
 +_A wall? I think I passed by some wall last time. I think I am getting closer to that cabin.
 +_This place look so cold. There is mud everywhere. Ahh.... I will get my car dirty. Cool. So.. left or right?
-+_I can't go there!
-+_!Let's take a few steps back and go the other way.
++_I can't go there! Let's take a few steps back and go the other way.
 +_ad 14
 +_ad 15
 +_ad 16

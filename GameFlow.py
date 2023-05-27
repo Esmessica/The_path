@@ -44,7 +44,7 @@ class Game:
                 _game.play_forest_sentence(forest.forest_rocks(), 7)
                 input()
                 Clear().cls()
-                _game.play_forest_sentence(forest.forest.forest3(), 8)
+                _game.play_forest_sentence(forest.forest3(), 8)
                 input()
                 Clear().cls()
                 _game.play_forest_sentence(forest.muddy_path(), 9)
@@ -68,11 +68,58 @@ class Game:
                 input()
                 Clear().cls()
                 _game.play_forest_sentence(forest.login_screen(), 16)
+                # Happy end
 
         else:
             _game.play_forest_sentence(forest.forest7(), 4)
             input()
             Clear().cls()
+            _game.play_forest_sentence(forest.forest4(), 17)
+            input()
+            Clear().cls()
+            _game.play_forest_sentence(forest.stairs_forest1(), 18)
+            input()
+            Clear().cls()
+            _game.play_forest_sentence(forest.fontain(), 19)
+
+            if _game.direction() == 1:
+                _game.play_forest_sentence(forest.forest5(), 23)
+                input()
+                Clear().cls()
+                _game.play_forest_sentence(forest.forest_rocks(), 24)
+                input()
+                Clear().cls()
+                _game.play_forest_sentence(forest.forest7(), 25)
+                if _game.direction() == 1:
+                    _game.play_forest_sentence(forest.muddy_path(), 26)
+                    input()
+                    Clear().cls()
+                else:
+
+
+
+            else:
+                _game.play_forest_sentence(cabin.cabin1(), 20)
+                input()
+                Clear().cls()
+                _game.play_forest_sentence(cabin.cabin_door(), 21)
+                input()
+                Clear().cls()
+                _game.play_forest_sentence(cabin.cabin_door(), 22)
+                input()
+                Clear().cls()
+                _game.play_forest_sentence(cabin.cabin2(), 13)
+                input()
+                Clear().cls()
+                _game.play_forest_sentence(cabin.cabin_door(), 14)
+                input()
+                Clear().cls()
+                _game.play_forest_sentence(cabin.keys_on_table(), 15)
+                input()
+                Clear().cls()
+                _game.play_forest_sentence(forest.login_screen(), 16)
+                # Happy end
+
 
         print("konec testu")
         input()

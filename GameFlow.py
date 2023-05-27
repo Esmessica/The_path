@@ -95,6 +95,17 @@ class Game:
                     input()
                     Clear().cls()
                 else:
+                    _game.play_forest_sentence(cabin.cabin2(), 13)
+                    input()
+                    Clear().cls()
+                    _game.play_forest_sentence(cabin.cabin_door(), 14)
+                    input()
+                    Clear().cls()
+                    _game.play_forest_sentence(cabin.keys_on_table(), 15)
+                    input()
+                    Clear().cls()
+                    _game.play_forest_sentence(forest.login_screen(), 16)
+                    # Happy end
 
 
 
@@ -108,17 +119,7 @@ class Game:
                 _game.play_forest_sentence(cabin.cabin_door(), 22)
                 input()
                 Clear().cls()
-                _game.play_forest_sentence(cabin.cabin2(), 13)
-                input()
-                Clear().cls()
-                _game.play_forest_sentence(cabin.cabin_door(), 14)
-                input()
-                Clear().cls()
-                _game.play_forest_sentence(cabin.keys_on_table(), 15)
-                input()
-                Clear().cls()
-                _game.play_forest_sentence(forest.login_screen(), 16)
-                # Happy end
+
 
 
         print("konec testu")

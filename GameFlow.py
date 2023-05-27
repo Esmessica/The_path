@@ -90,6 +90,7 @@ class Game:
                 input()
                 Clear().cls()
                 _game.play_forest_sentence(forest.forest7(), 25)
+
                 if _game.direction() == 1:
                     _game.play_forest_sentence(forest.muddy_path(), 26)
                     input()
@@ -107,8 +108,6 @@ class Game:
                     _game.play_forest_sentence(forest.login_screen(), 16)
                     # Happy end
 
-
-
             else:
                 _game.play_forest_sentence(cabin.cabin1(), 20)
                 input()
@@ -120,15 +119,11 @@ class Game:
                 input()
                 Clear().cls()
 
-
-
         print("konec testu")
         input()
 
 
 # g = Game()
 # g.ingame()
-_game = GameComponentLogic()
-forest = Forest()
-_game.play_forest_sentence(forest.muddy_path(), 9)
+
 

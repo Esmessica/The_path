@@ -123,7 +123,7 @@ class Game:
         input()
 
 
-# g = Game()
-# g.ingame()
+g = Game()
+g.ingame()
 
 

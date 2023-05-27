@@ -39,16 +39,16 @@ class Game:
             Clear().cls()
             _game.play_forest_sentence(forest.lonely_tree(), 6)
             if _game.direction() == 1:
-                _game.play_forest_sentence(forest.split_path1(), 7)
+                _game.play_forest_sentence(forest.forest_rocks(), 7)
                 input()
                 Clear().cls()
-                _game.play_forest_sentence(forest.forest_rocks(), 8)
+                _game.play_forest_sentence(forest.forest.forest3(), 8)
                 input()
                 Clear().cls()
-                _game.play_forest_sentence(forest.forest3(), 9)
+                _game.play_forest_sentence(forest.muddy_path(), 9)
                 input()
                 Clear().cls()
-
+                _game.play_forest_sentence(forest.lonely_tree(), 10)
 
             else:
                 pass
@@ -63,5 +63,9 @@ class Game:
         input()
 
 
-g = Game()
-g.ingame()
+# g = Game()
+# g.ingame()
+_game = GameComponentLogic()
+forest = Forest()
+_game.play_forest_sentence(forest.muddy_path(), 9)
+

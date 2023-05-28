@@ -3,11 +3,7 @@ class Cabins:
     """Object for printing cabin,doors and keys"""
 
     def __init__(self):
-        self._cabin_door = self._cabin_door
-        self._cabin_keys = self._cabin_keys
-        self._printing_inside_cabin = self._printing_inside_cabin
-        self._printing_cabin2 = self._printing_cabin2
-        self._printing_cabin1 = self._printing_cabin1
+        pass
 
     def __str__(self):
         self._information = "Cabin pictures"

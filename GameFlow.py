@@ -125,5 +125,3 @@ class Game:
 
 g = Game()
 g.ingame()
-
-

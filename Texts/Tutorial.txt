@@ -1,3 +1,4 @@
 Your journey begins. The game is controled by typing arrows.
 Type "<" to go backwards, ">" to go forward.
+Press f11 to run game in window mode.
 -------- press enter to continue --------

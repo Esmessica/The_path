@@ -87,16 +87,5 @@ class GameComponentLogic:
         return self._chance
 
 
-# wolves = Wolves()
 # g = GameComponentLogic()
-# test_w = g.wolf_chance(2)
-# print(test_w)
-# if test_w == 1:
-#     g.play_forest_sentence(wolves.paws(), 2, 0)
-#
-# else:
-#     print("Je to dva")
-
-# TO write text for each picture CHECK
-# TO match text to each picture for story
-# TO make function for moving into next location via < >
+# g.part_start_game()

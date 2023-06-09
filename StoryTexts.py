@@ -13,6 +13,7 @@ class StoryTexts:
 
     def open_story_lines(self):
         with open("Texts/StoryLines.txt", encoding="utf-8") as file:  # test
+            print("\n\n\n\n\n\n")
             count = 0
             sentence = file.readlines()
             self._leng = len(sentence)

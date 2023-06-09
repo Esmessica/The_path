@@ -21,9 +21,6 @@ class Game:
         cabin = Cabins()
         keyboard.press('f11')
 
-        # _before_game = StoryTexts()
-        # _before_game.tutorial_texts()
-        # _before_game.open_story_lines()
         _game.part_start_game()
         _game.play_forest_sentence(forest.start_car(), 0)
         input()

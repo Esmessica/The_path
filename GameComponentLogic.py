@@ -71,13 +71,13 @@ class GameComponentLogic:
         self._slowprint = ConsolePrinter(self._sentence[sentence_index])
         self._slowprint.slow_print()
 
-    def wolf_chance(self):
-        self._chance = random.randint(1, 5)
+    def wolf_chance(self, rand_ground_chance_number):
+        self._chance = random.randint(1, rand_ground_chance_number)
         return self._chance
 
 
-# g = GameComponentLogic()
-# print(g.wolf_chance())
+g = GameComponentLogic()
+print(g.wolf_chance(5))
 # TO write text for each picture CHECK
 # TO match text to each picture for story
 # TO make function for moving into next location via < >

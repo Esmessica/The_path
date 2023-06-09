@@ -35,6 +35,7 @@ class Game:
         Clear().cls()
         print("\n \n \n \n \n \n")
         _game.play_forest_sentence(forest.split_path2(), 1, 2)
+
         if _game.direction() == 1:
             Clear().cls()
             print("\n \n \n \n \n \n")
@@ -114,7 +115,7 @@ class Game:
                 # Happy end
 
             else:
-
+                Clear().cls()
                 _game.play_forest_sentence(forest.fontain(), 1, 11)
                 input()
                 Clear().cls()
@@ -139,6 +140,7 @@ class Game:
                 # Happy end
 
         else:
+            Clear().cls()
             _game.play_forest_sentence(forest.forest7(), 1, 4)
             input()
             Clear().cls()
@@ -153,6 +155,7 @@ class Game:
             print("\n \n \n \n \n \n")
             _game.play_forest_sentence(forest.fontain(), 1, 19)
             print("\n \n \n \n \n \n")
+
             if _game.direction() == 1:
                 Clear().cls()
                 print("\n \n \n \n \n \n")
@@ -189,6 +192,7 @@ class Game:
                     _game.play_forest_sentence(forest.login_screen(), 1, 16)
                     # Happy end
                 else:
+                    Clear().cls()
                     _game.play_forest_sentence(cabin.cabin2(), 1, 13)
                     input()
                     Clear().cls()
@@ -205,6 +209,7 @@ class Game:
                     # Happy end
 
             else:
+                Clear().cls()
                 _game.play_forest_sentence(cabin.cabin1(), 1, 20)
                 input()
                 Clear().cls()

@@ -214,8 +214,10 @@ class Game:
                 Clear().cls()
                 print("\n \n \n \n \n \n")
                 _game.play_forest_sentence(cabin.cabin_door(), 1, 22)
+                # Check ending on this part
                 input()
                 Clear().cls()
+                _game
 
         print("*")
         input()

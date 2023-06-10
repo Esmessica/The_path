@@ -37,6 +37,7 @@ class PictureInGame:
 
     def start_game(self):
         """Start game picture"""
+        print("\n \n \n \n \n \n")
         _forest = Forest()
         self._forest = _forest.login_screen()
         return self._forest

@@ -299,8 +299,8 @@ class Game:
         input()
 
 
-g = Game()
-g.ingame()
+# g = Game()
+# g.ingame()
 
 # _game = GameComponentLogic()
 # wolves = Wolves()

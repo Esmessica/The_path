@@ -22,6 +22,7 @@ class Game:
         cabin = Cabins()
         wolves = Wolves()
         keyboard.press('f11')
+        wolf_chance = _game.wolf_chance(4)      # Holds random number for wolves
 
         print("\n \n \n \n \n \n")
         _game.part_start_game()
@@ -43,7 +44,7 @@ class Game:
             input()
             Clear().cls()
             print("\n \n \n \n \n \n")
-            wolf_chance = _game.wolf_chance(4)               # wolves chance
+
             if wolf_chance == 2:
                 _game.play_forest_sentence(wolves.paws(), 2, 0)
                 input()
@@ -141,9 +142,17 @@ class Game:
 
         else:
             Clear().cls()
+            print("\n \n \n \n \n \n")
             _game.play_forest_sentence(forest.forest7(), 1, 4)
             input()
             Clear().cls()
+
+            if wolf_chance == 2:
+                print("\n \n \n \n \n \n")
+                _game.play_forest_sentence(wolves.paws(), 2, 0)
+                input()
+                Clear().cls()
+
             print("\n \n \n \n \n \n")
             _game.play_forest_sentence(forest.forest4(), 1, 17)
             input()
@@ -162,6 +171,13 @@ class Game:
                 _game.play_forest_sentence(forest.forest5(), 1, 23)
                 input()
                 Clear().cls()
+
+                if wolf_chance == 2:
+                    print("\n \n \n \n \n \n")
+                    _game.play_forest_sentence(wolves.wolves_pack(), 2, 1)
+                    input()
+                    Clear().cls()
+
                 print("\n \n \n \n \n \n")
                 _game.play_forest_sentence(forest.forest_rocks(), 1, 24)
                 input()
@@ -193,6 +209,7 @@ class Game:
                     # Happy end
                 else:
                     Clear().cls()
+                    print("\n \n \n \n \n \n")
                     _game.play_forest_sentence(cabin.cabin2(), 1, 13)
                     input()
                     Clear().cls()
@@ -210,6 +227,7 @@ class Game:
 
             else:
                 Clear().cls()
+                print("\n \n \n \n \n \n")
                 _game.play_forest_sentence(cabin.cabin1(), 1, 20)
                 input()
                 Clear().cls()
@@ -222,7 +240,60 @@ class Game:
                 # Check ending on this part
                 input()
                 Clear().cls()
-                _game
+                # added block of code
+                print("\n \n \n \n \n \n")
+                _game.play_forest_sentence(forest.muddy_path(), 1, 24)
+                input()
+                Clear().cls()
+                print("\n \n \n \n \n \n")
+
+                if wolf_chance == 2:
+
+                    # wolves
+
+                    print("\n \n \n \n \n \n")
+                    _game.play_forest_sentence(wolves.wolves_pack(), 2, 1)
+                    input()
+                    Clear().cls()
+
+                _game.play_forest_sentence(forest.forest_rocks(), 1, 12)
+                input()
+                Clear().cls()
+
+                if _game.direction() == 1:
+
+                    Clear().cls()
+                    print("\n \n \n \n \n \n")
+                    _game.play_forest_sentence(forest.forest_rocks(), 1, 26)
+
+                elif _game.direction() == 1 and wolf_chance == 2:
+
+                    """Ends game if wolves were met earlier"""
+
+                    print("\n \n \n \n \n \n")
+                    _game.play_forest_sentence(wolves.angry_wolf(), 2, 2)
+                    input()
+                    Clear().cls()
+                    print("\n \n \n \n \n \n")
+                    _game.game_over()
+                    input()
+                    exit()
+
+                print("\n \n \n \n \n \n")
+                _game.play_forest_sentence(cabin.cabin2(), 1, 13)
+                input()
+                Clear().cls()
+                print("\n \n \n \n \n \n")
+                _game.play_forest_sentence(cabin.cabin_door(), 1, 14)
+                input()
+                Clear().cls()
+                print("\n \n \n \n \n \n")
+                _game.play_forest_sentence(cabin.keys_on_table(), 1, 15)
+                input()
+                Clear().cls()
+                print("\n \n \n \n \n \n")
+                _game.play_forest_sentence(forest.login_screen(), 1, 16)
+                # Happy end
 
         print("*")
         input()

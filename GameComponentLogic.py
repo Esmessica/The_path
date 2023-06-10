@@ -26,6 +26,7 @@ class GameComponentLogic:
         tutorial = StoryTexts()
         tutorial.tutorial_texts()
         Clear().cls()
+        print("\n \n \n \n \n \n")
         _pregame = self._file.open_story_lines()
         _pregame_pic = self._pic.start_game()
         _pregame_text = self._pic.start_text()

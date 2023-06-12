@@ -43,23 +43,25 @@ class Game:
             _game.play_forest_sentence(forest.forest5(), 1, 3)
             input()
             Clear().cls()
-            print("\n \n \n \n \n \n")
 
             if wolf_chance == 2:
+                print("\n \n \n \n \n \n")
                 _game.play_forest_sentence(wolves.paws(), 2, 0)
                 input()
                 Clear().cls()
 
+            print("\n \n \n \n \n \n")
             _game.play_forest_sentence(forest.stairs_forest1(), 1, 5)
             input()
             Clear().cls()
-            print("\n \n \n \n \n \n")
 
             if wolf_chance == 2:
+                print("\n \n \n \n \n \n")
                 _game.play_forest_sentence(wolves.wolves_pack(), 2, 1)
                 input()
                 Clear().cls()
 
+            print("\n \n \n \n \n \n")
             _game.play_forest_sentence(forest.lonely_tree(), 1, 6)
 
             if _game.direction() == 1:
@@ -117,6 +119,7 @@ class Game:
 
             else:
                 Clear().cls()
+                print("\n \n \n \n \n \n")
                 _game.play_forest_sentence(forest.fontain(), 1, 11)
                 input()
                 Clear().cls()
@@ -245,7 +248,6 @@ class Game:
                 _game.play_forest_sentence(forest.muddy_path(), 1, 24)
                 input()
                 Clear().cls()
-                print("\n \n \n \n \n \n")
 
                 if wolf_chance == 2:
 
@@ -256,12 +258,12 @@ class Game:
                     input()
                     Clear().cls()
 
+                print("\n \n \n \n \n \n")
                 _game.play_forest_sentence(forest.forest_rocks(), 1, 12)
                 input()
                 Clear().cls()
 
                 if _game.direction() == 1:
-
                     Clear().cls()
                     print("\n \n \n \n \n \n")
                     _game.play_forest_sentence(forest.forest_rocks(), 1, 26)
@@ -299,12 +301,3 @@ class Game:
         input()
 
 
-# g = Game()
-# g.ingame()
-
-# _game = GameComponentLogic()
-# wolves = Wolves()
-#
-# _game.play_forest_sentence(wolves.angry_wolf(), 2, 2)
-# Clear().cls()
-# _game.game_over()

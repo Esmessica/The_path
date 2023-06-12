@@ -61,7 +61,7 @@ class GameComponentLogic:
                 try:
                     raise ValueError(_e)
                 except ValueError as exp:
-                    print("Error", exp)
+                    print("\t\tError", exp)
 
     def play_forest_sentence(self, forest, file_option: int,  sentence_index):
         """Method for choosing line of text code and picture from py file"""

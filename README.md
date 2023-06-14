@@ -4,6 +4,5 @@
 
 -'keyboard' library
 
-TO START THE GAME use The_path.ink
-
+TO START THE GAME use main.py
 Enjoy

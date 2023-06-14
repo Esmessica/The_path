@@ -297,7 +297,7 @@ class Game:
                 _game.play_forest_sentence(forest.login_screen(), 1, 16)
                 # Happy end
 
-        print("*")
+
         input()
 
 

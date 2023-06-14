@@ -39,6 +39,7 @@ class GameComponentLogic:
     def game_over(self):
         """Method for game over screen  -  without text"""
         Clear().cls()
+        print("\n \n \n \n \n \n")
         _wolf = Wolves()
         print(_wolf.angry_wolf())
         _game_over = self._pic.game_over()

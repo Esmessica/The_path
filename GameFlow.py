@@ -22,7 +22,7 @@ class Game:
         cabin = Cabins()
         wolves = Wolves()
         keyboard.press('f11')
-        wolf_chance = _game.wolf_chance(4)      # Holds random number for wolves
+        wolf_chance = _game.wolf_chance(5)      # Holds random number for wolves
 
         print("\n \n \n \n \n \n")
         _game.part_start_game()
@@ -276,7 +276,6 @@ class Game:
                     _game.play_forest_sentence(wolves.angry_wolf(), 2, 2)
                     input()
                     Clear().cls()
-                    print("\n \n \n \n \n \n")
                     _game.game_over()
                     input()
                     exit()

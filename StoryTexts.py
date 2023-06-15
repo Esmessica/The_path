@@ -25,15 +25,13 @@ class StoryTexts:
                 input()
 
     def tutorial_texts(self):
-        with open("Texts/Tutorial.txt", encoding="utf-8") as file:
-            sentence = file.readlines()
-            for i in sentence:
-                printer = ConsolePrinter(i)
-                _do = printer.slow_print()
-            print("\n")
-            input()
-            Clear().cls()
-
-
-# f = StoryTexts()
-# f.tutorial_texts()
+        try:
+            with open("Texts/Tutorial.txt", encoding="utf-8") as file:
+                sentence = file.readlines()
+                for i in sentence:
+                    printer = ConsolePrinter(i)
+                    _do = printer.slow_print()
+                print("\n")
+                input()
+        except FileNotFoundError:
+            print("Error in text file")

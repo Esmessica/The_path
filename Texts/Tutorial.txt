@@ -1,4 +1,4 @@
 Your journey begins. The game is controled by typing arrows.
-Type "<" to go left, ">" to go right.
+Type '<' to go left, '>' to go right.
 Press f11 to run game in window mode.
 -------- press enter to continue --------
